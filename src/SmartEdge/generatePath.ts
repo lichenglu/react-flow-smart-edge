@@ -32,7 +32,7 @@ export const generatePath = (
 		? withStraightMovement
 		: withDiagonalMovement
 
-	const finder = new AStarFinder(finderOptions)
+	const finder = new JumpPointFinder()
 
 	let fullPath: number[][] = []
 	let smoothedPath: number[][] = []
